@@ -17,16 +17,14 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () => controller.createPayment(),
+              onPressed: () => controller.pay(),
               child: const Text('Ödeme Yap'),
             ),
             Obx(() {
               if (controller.isLoading.value) {
                 return const CircularProgressIndicator();
-              } else if (controller.responseMessage.value.isNotEmpty) {
-                return Text(controller.responseMessage.value);
               } else {
-                return const SizedBox.shrink();
+                return const SizedBox();
               }
             }),
           ],

@@ -38,6 +38,8 @@ dependencies:
   get: ^4.6.6
   http: ^1.2.2
   crypto: ^3.0.3
+  iyzico_payment:
+    path: /Applications/Developer/iyzico_payment
 
 dev_dependencies:
   flutter_test:
